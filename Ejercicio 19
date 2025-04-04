@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double height, final_speed;
+    const double gravity = 9.8;
+    
+    cout << "Ingrese la altura desde la que se deja caer el objeto (m): ";
+    cin >> height;
+    
+    final_speed = sqrt(2 * gravity * height);
+    
+    cout << "La velocidad final al impactar el suelo es: " << final_speed << " m/s" << endl;
+    
+    return 0;
+}
