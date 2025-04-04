@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int widgets, dispositivos;
+    const int peso_widget = 75, peso_dispositivo = 112;
+    
+    cout << "Ingrese la cantidad de widgets: ";
+    cin >> widgets;
+    cout << "Ingrese la cantidad de dispositivos: ";
+    cin >> dispositivos;
+    
+    int peso_total = (widgets * peso_widget) + (dispositivos * peso_dispositivo);
+    cout << "El peso total del pedido es: " << peso_total << " gramos." << endl;
+    
+    return 0;
+}
