@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    const double precio_por_pan = 3.49;
+    const double descuento = 0.60;
+    int cantidad;
+    
+    cout << "Ingrese la cantidad de panes de un día de antigüedad: ";
+    cin >> cantidad;
+    
+    double precio_regular = cantidad * precio_por_pan;
+    double descuento_total = precio_regular * descuento;
+    double precio_final = precio_regular - descuento_total;
+    
+    cout << fixed << setprecision(2);
+    cout << "Precio regular:  $" << setw(6) << precio_regular << endl;
+    cout << "Descuento:       $" << setw(6) << descuento_total << endl;
+    cout << "Precio final:    $" << setw(6) << precio_final << endl;
+    
+    return 0;
+}
